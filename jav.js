@@ -381,7 +381,7 @@ function getItemMagnet(link, meta, done) {
                                 console.log(('[' + fanhao + ']').green.bold.inverse + '[磁链]'.yellow.inverse);
                                 console.log(jsonInfo.magnets);
                             });
-
+                            jsonInfo.magnets = mag_sizes;
                         }
 
                         fs.writeFile(magnetFilePath, JSON.stringify(jsonInfo, '', 4),
